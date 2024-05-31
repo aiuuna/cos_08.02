@@ -1,0 +1,260 @@
+html, * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0; 
+    padding: 0;
+    gap: 32px;
+}
+
+.menu-item {
+    color: white;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+.menu-item > a {
+    text-decoration: none;
+    color: white;    
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0px;
+    position: relative;
+}
+
+.menu-item > a:hover {
+    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.menu-item > a:hover::after {  
+    position: absolute;
+    top: 29px;
+    
+    content: "";
+    width: 9px;
+    height: 0px;
+    
+    border: 2.5px solid #E3E4E6;
+    border-radius: 2px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #010208;
+    height: 96px;
+    align-items: center;
+    padding: 0 112px;
+}
+
+.logo > img {
+    height: 28px;
+    width: 96px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #010208;
+    padding: 220px 112px 42px 112px;
+    color: hsla(220, 6%, 90%, 0.55);
+    gap: 234px;
+    text-align: center;
+}
+
+.hero-section__description {
+    color: #E3E4E6;    
+    font-weight: 600;
+}
+
+.hero-section__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.hero-section, .hero-section__description {
+    font-size: 56px;
+    line-height: 150%;
+} 
+
+.works-section {
+    background-color: #010208;
+    padding-inline: 110px;
+    padding-block: 80px 120px;
+}
+
+h2 {
+    color: hsla(220, 6%, 90%, 0.55);
+}
+
+.accient {
+    color: #E3E4E6;    
+    font-weight: 600;
+}
+
+.work_item {
+    display: flex;
+    margin-top: 97px;
+    gap: 32px;
+}
+
+.work_image {
+    height: 490px;
+    width: 594px;
+    border-radius: 16px 
+}
+
+.work_description button {
+    border: 1px solid grey;
+    background-color: transparent;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 0.632);
+    display: flex;
+    align-items: center;
+    font-size: 16;
+}
+
+.work_description > button:hover {
+    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+}
+
+.work_description {
+    color: white;
+    padding-top: 183px;
+
+}
+
+.work_description p {
+    font-size: 32px;
+    line-height: 150%;
+    color:hsla(220, 6%, 90%, 0.55);
+    margin-top: 16px;
+}
+
+p .work_description-accent {
+    color: white;
+    font-weight: 600;
+}
+
+.work_tag {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 300;
+    color:hsla(220, 6%, 90%, 0.55);
+    margin-block: 24px 32px;
+}
+.clients-section {
+    background-color: #010208;
+    height: 500px;
+    color: white;
+    padding-inline: 112px;
+    padding-block: 80px 130px;
+}
+
+.clients-section h2 {
+    margin-bottom: 80px;
+}
+
+.clients_description {
+    font-weight: 600; 
+    color: white;   
+}
+
+.clients_logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutme_item {
+    display: flex;
+    margin-top: 97px;
+    gap: 32px;
+}
+
+.aboutme_imgs {
+    display: flex;
+    align-items: center;
+    
+}
+
+.column {
+    grid-column: auto;
+}
+
+.aboutme_img1{
+    padding-right: 32px;
+    width: 285px;
+}
+.aboutme_img2, .aboutme_img3 {
+    padding-bottom: 32px;
+    width: 285px;
+    height: 375px;
+}
+
+.aboutme_img2{
+    padding-top: 32px;
+}
+
+.aboutme-section {
+    background-color: #010208;
+    padding-inline: 110px;
+    padding-block: 80px 120px;
+}
+
+.footer_title,.footer_description{
+    text-align: center;
+    color:#fff;
+}
+
+.footer_icons{
+    color: rgb(88, 87, 87);
+    text-align: center;
+    display: flex; 
+    justify-content:space-around;
+}
+
+.footer_img {
+    margin: 0 24px;
+} 
+
+.footer{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+  
+.footer_copyright{
+    text-align: center;
+    color:#fff;
+    padding-top: 20px;
+}
+
+.footer_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #010208;
+    padding: 220px 112px 42px 112px;
+    color: hsla(220, 6%, 90%, 0.55);
+    gap: 60px;
+    text-align: center;
+}
